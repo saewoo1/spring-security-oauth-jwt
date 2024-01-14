@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/udemy?useSSL=false&serverTimezone=UTC
+    username: root
+    # security 초기 테스트 설정 실행할 때마다 귀찮으니까 임시로 정해뒀다.
+
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
